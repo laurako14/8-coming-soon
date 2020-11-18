@@ -4,7 +4,7 @@
     padding-bottom: var(--section-padding);
 }
 
-.footer.container {
+footer.container {
     padding-top: 0;
     padding-bottom: calc(var(--section-padding) * 1.5);
 }
