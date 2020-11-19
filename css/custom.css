@@ -52,3 +52,8 @@ footer.container {
 .hero .form {
     margin-bottom: var(--hero-space);
 }
+
+h2 {
+    display: inline-block;
+    text-transform: uppercase;
+}
