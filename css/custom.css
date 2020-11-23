@@ -41,7 +41,7 @@ footer.container {
     display: inline-block;
     width: 100%;
     font-size: 18px;
-    color: #555;
+    color: var(--grey-color);
     margin-bottom: calc(var(--hero-space) * 3);
 }
 
@@ -53,7 +53,25 @@ footer.container {
     margin-bottom: var(--hero-space);
 }
 
-h2 {
+main h2 {
     display: inline-block;
+    width: 100%;
     text-transform: uppercase;
+    margin-bottom: var(--main-space);
+    color: #000;
+    font-size: 18px;
+}
+
+main p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--main-space);
+    font-size: 17px;
+    line-height: 26px;
+    color: var(--grey-color);
+}
+
+main p > a {
+    color: var(--secondary-color);
+    text-decoration: none;
 }

@@ -20,7 +20,7 @@
     display: inline-block;
     font-size: 10px;
     padding: 10px 40px;
-    background-color: crimson;
+    background-color: var(--secondary-color);
     color: white;
     margin: 20px 0;
 }
