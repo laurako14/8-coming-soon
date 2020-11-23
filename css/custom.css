@@ -76,10 +76,6 @@ main p > a {
     text-decoration: none;
 }
 
-footer > .row {
-    border-bottom: 1px solid white;
-}
-
 footer {
     text-align: center;
     line-height: 36px;
@@ -120,6 +116,25 @@ footer a {
     color: #fff;
     text-decoration: none;
 }
+
+footer .container .row {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-bottom: 1px solid white;
+}
+
+footer .fa {
+    display: inline-block;
+    color: #fff;
+    padding: 20px 20px;
+}
+
+    footer .fa:hover {
+        background-color: #fff;
+        color: var(--main-color);
+    }
 
 @media (max-width: 700px) {
     footer .text-trio > .text {
