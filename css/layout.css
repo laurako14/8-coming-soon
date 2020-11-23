@@ -1,4 +1,10 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 1fr;
+}
+
 .container {
+    grid-column: 2 / span 25;
     display: inline-block;
     width: 100%;
     padding: calc(var(--section-padding) * 2) 0;
