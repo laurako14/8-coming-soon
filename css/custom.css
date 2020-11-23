@@ -75,3 +75,48 @@ main p > a {
     color: var(--secondary-color);
     text-decoration: none;
 }
+
+footer > .row {
+    border-bottom: 1px solid white;
+}
+
+footer {
+    text-align: center;
+    line-height: 36px;
+    font-size: 16px;
+    color: #fff8;
+}
+
+    footer .text-trio {
+        display: inline-block;
+        width: 100%;
+    }
+        footer .text-trio > .text {
+            display: inline-block;
+            padding: 0 10px;
+            position: relative;
+        }
+            footer .text-trio > .text::before {
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 14px;
+                background-color: #fff; 
+                position: absolute;
+                left: -2px;
+                top: 9px;
+            }
+/* footer .text-trio > .text::after {
+} */
+            footer .text-trio > .text:first-of-type::before {
+                display: none;
+            }
+footer p {
+    display: inline-block;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
