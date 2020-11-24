@@ -1,32 +1,43 @@
 .form {
     display: inline-block;
     width: 100%;
+    color: #444;
 }
-    .form-row {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .form-row-short {
+    .form > input {
         display: inline-block;
         float: left;
-        width: 40%;
-    }
-    .form-row-short:last-of-type {
-        margin-left: 50px
+        width: 45%;
+        margin-bottom: 30px;
+        line-height: 36px;
+        font-size: 18px;
+        border: none;
+        border-bottom: 2px solid #ccc;
     }
 
-.btn {
-    display: inline-block;
-    font-size: 10px;
-    padding: 10px 40px;
-    background-color: var(--secondary-color);
-    color: white;
-    margin: 20px 0;
-}
+    .form > input + input {
+        margin-left: 10%;
+    }
 
-.input {
-    background-color: transparent;
-    border: 0;
-    border-bottom: 1px solid white;
+    .form > textarea {
+        display: inline-block;
+        float: left;
+        width: 100%;
+        min-height: 100px;
+        max-height: 400px;
+        font-size: 18px;
+        line-height: 25px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        resize: none;
+        margin-bottom: 30px;
+    }
+   
+@media (max-width: 1100px) {
+        .form > input {
+            width: 100%;
+        }
+    
+        .form > input + input {
+            margin-left: 0;
+        }
 }

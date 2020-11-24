@@ -11,6 +11,7 @@
     <!-- 3rd party css -->
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- component -->
+    <link rel="stylesheet" href="./css/button.css">
     <link rel="stylesheet" href="./css/clock.css">
     <link rel="stylesheet" href="./css/form.css">
     <link rel="stylesheet" href="./css/mouse.css">
@@ -25,13 +26,12 @@
         <h1>COMING SOON</h1>
         <p>An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
         <div class="clock">
-            CLOCK
+            <p class="static">432 09 37 39</p>
+            <div>days hours minutes seconds</div>
         </div>
         <form class="form">
-            <div class="form-row">
                 <input class="input" id="typeemail" type="text" placeholder="Type your email">
                 <div class="btn">Subscribe Now</div>
-            </div>
         </form>
         <div class="mouse">
             MOUSE
@@ -66,15 +66,10 @@
                     You can use the contact form below or contact us via e-mail at: <a href="mailto:trendythemenet@gmail.com">trendythemenet@gmail.com</a> Contact form is fully working and very easy to customize.
                 </p>
                 <form class="form">
-                    <div class="form-row-short">
-                        <input class="input" id="Name" type="text" placeholder="Name">
-                    </div>
-                    <div class="form-row-short">
-                        <input class="input" id="Email" type="text" placeholder="Email">
-                    </div>
-                    <div class="form-row">
-                        <input class="input" id="Message" type="text" placeholder="Message">
-                    </div>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <!-- <input type="submit" value="Send message" -->
                     <div class="btn">Send Message</div>
                 </form>
                 </div>

@@ -3,8 +3,10 @@
 .container.hero {
     padding-bottom: var(--section-padding);
     background-image: url(../img/hero-image.jpg);
-    background-repeat: no-repeat;
+    background-position: bottom center;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 footer.container {
@@ -74,6 +76,10 @@ main p {
 main p > a {
     color: var(--secondary-color);
     text-decoration: none;
+}
+
+main .form > .btn {
+    float: right;
 }
 
 footer {
