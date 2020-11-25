@@ -15,7 +15,11 @@
 // // Apjungimas
 // console.log(sum(4, 7));
 
-import { renderSocials } from "./components/renderSocials.js";
+import { renderSocials } from "./components/socials/renderSocials.js";
 import { socialsData } from "./data/socialsData.js";
 
 renderSocials(socialsData);
+
+// const h1DOM = document.querySelector('h1');
+// const inputDOM = document.querySelectorAll('main .form > input');
+// h1DOM.innerText = '';
