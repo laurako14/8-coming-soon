@@ -1,13 +1,19 @@
-.clock .static {
-    display: inline-block;
-    font-size: 70px;
+.clock {
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
     color: white;
-    margin-bottom: 0;
 }
 
-.clock > div {
-    display: inline-block;
-    font-size: 30px;
+.clock > div.numbers {
+    font-size: 80px;
+    color: white;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.clock > div.time {
+    font-size: 20px;
     color: white;
     text-transform: uppercase;
+    justify-content: center;
 }
