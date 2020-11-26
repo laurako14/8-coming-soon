@@ -12,7 +12,7 @@ function renderSocials(selector, data) {
         return false;
     }
 
-    const socialsDOM = document.querySelector('footer > .row');
+    const socialsDOM = document.querySelector(selector);
 
     if (!socialsDOM) {
         console.error('ERROR: nerasta turinio generavimo vieta');
@@ -29,9 +29,7 @@ function renderSocials(selector, data) {
         HTML += `<a href="${item.link}" target="blank" class="fa fa-${item.icon}" aria-hidden="true"></a>`;
     }
 
-    
-
-    if (HTML === '') {
+        if (HTML === '') {
         console.error('ERROR: nepavyko sugeneruoti social ikonu/nuorodu');
         return;
     }

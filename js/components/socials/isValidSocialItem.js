@@ -1,3 +1,8 @@
+/**
+ * Skirta patikrinti, ar input duomenys ir ji sudarantys elementai teisingo tipo ir ne tusti
+ * @param {Array} itemObject Duomeny masyvas, savyje turintis social elemento nuoroda ir ikona
+ * @returns {boolean} Logikos vykdymo metu nustacius klaida, grazinamas `false`, o suveikus teisingai - `true`
+ */
 function isValidSocialItem(itemObject){
 
 if (typeof itemObject !== 'object') {
