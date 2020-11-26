@@ -17,3 +17,79 @@
     text-transform: uppercase;
     justify-content: center;
 }
+
+@media (max-width: 700px) {
+    .clock {
+    grid-template-columns: 20px 250px 250px 20px;
+    }
+    .clock > div.numbers.days {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .clock > div.numbers.hours {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .clock > div.time.ds {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .clock > div.time.hrs {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    .clock > div.numbers.minutes {
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    .clock > div.time.min {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .clock > div.numbers.seconds {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .clock > div.time.scs {
+        grid-column: 3/4;
+        grid-row: 4/5;
+    }
+}
+
+@media (max-width: 500px) {
+    .clock {
+        grid-template-columns: 20px 1fr 20px;
+        }
+        .clock > div.numbers.days {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        .clock > div.numbers.hours {
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .clock > div.time.ds {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .clock > div.time.hrs {
+            grid-column: 2/3;
+            grid-row: 4/5;
+        }
+        .clock > div.numbers.minutes {
+            grid-column: 2/3;
+            grid-row: 5/6;
+        }
+        .clock > div.time.min {
+            grid-column: 2/3;
+            grid-row: 6/7;
+        }
+        .clock > div.numbers.seconds {
+            grid-column: 2/3;
+            grid-row: 7/8;
+        }
+        .clock > div.time.scs {
+            grid-column: 2/3;
+            grid-row: 8/9;
+        }
+}
