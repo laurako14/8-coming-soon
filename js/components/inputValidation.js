@@ -1,4 +1,4 @@
-function inputValidation(data) {
+function inputValidation(selector, data) {
     if (typeof selector !== 'string') {
      console.error('ERROR: selektorius turi buti tekstinio tipo.');
      return false;       

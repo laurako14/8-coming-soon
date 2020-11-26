@@ -18,7 +18,11 @@
 import { renderSocials } from "./components/socials/renderSocials.js";
 import { socialsData } from "./data/socialsData.js";
 
-renderSocials(socialsData);
+renderSocials('footer > .row', socialsData);
+
+// if (!renderSocials()) {
+//     console.error();
+// }
 
 // const h1DOM = document.querySelector('h1');
 // const inputDOM = document.querySelectorAll('main .form > input');
