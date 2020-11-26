@@ -48,7 +48,7 @@ footer.container {
 }
 
 .hero .clock {
-    margin-bottom: calc(var(--hero-space) * 2);
+    margin-bottom: calc(var(--hero-space) * 3);
 }
 
 .hero .form {
