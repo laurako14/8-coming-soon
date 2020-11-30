@@ -165,6 +165,10 @@ footer .fa {
         background-color: #fff;
         color: var(--main-color);
     }
+    footer .btn.fa:hover {
+        background-color: initial;
+        color: var(--main-color);
+    }
 
 @media (max-width: 700px) {
     footer .text-trio > .text {
