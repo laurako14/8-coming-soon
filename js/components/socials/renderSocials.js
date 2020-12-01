@@ -34,7 +34,7 @@ function renderSocials(selector, data) {
         return;
     }
    
-    socialsDOM.innerHTML = HTML;
+    socialsDOM.innerHTML += HTML;
 }
 
 export { renderSocials }
