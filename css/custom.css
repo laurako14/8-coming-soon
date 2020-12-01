@@ -148,6 +148,7 @@ footer.container > .row {
     gap: 10px;
     border-bottom: 1px solid white;
     flex-wrap: wrap;
+    position: relative;
 }
 
 footer .fa {
@@ -166,6 +167,12 @@ footer .fa {
         color: var(--main-color);
     }
 
+    footer .btn.circle {
+        position: absolute;
+        top: -24px;
+        right: -13px;
+    }
+   
 @media (max-width: 700px) {
     footer .text-trio > .text {
         width: 100%;
