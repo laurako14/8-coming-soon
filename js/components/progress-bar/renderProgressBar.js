@@ -1,3 +1,5 @@
+import { isValidSingleProgressBar } from "./isValidSingleProgressBar.js";
+
 /**
  * Skirta progress-bar komponento generavimui
  * @param {string} selector Nurodo vieta, kur bus generuojamas HTML turinys
@@ -6,6 +8,9 @@
  * @returns {boolean} Funkcijai tinkamai suveikus grazinamas `true`, priesingu atveju - `false`
  */
 function renderProgressBar(selector, title, value) {
+    if (!isValidSingleProgressBar({ selector, title, value })) {
+        return false;
+    }
     const HTML = `<div class="progress-bar">
                     <div class="top">
                     <div class="label">${title}</div>
@@ -19,6 +24,12 @@ function renderProgressBar(selector, title, value) {
                     </div>`
 
     const DOM = document.querySelector(selector);
+
+    if (!DOM) {
+        console.error('ERROR: nerasta vieta, kur turi buti generuotas turinys');
+        return false;
+    }
+
     DOM.insertAdjacentHTML('beforeend', HTML);
 
     return true;

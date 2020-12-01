@@ -25,6 +25,7 @@ import { renderAllProgressBars } from "./components/progress-bar/renderAllProgre
 renderSocials('footer > .row', socialsData);
 renderClock('.clock');
 renderAllProgressBars(progressBarData);
+
 // renderProgressBar('.column.left', 'UX Design', 90);
 // renderProgressBar('.column.left', 'Web Design', 80);
 // renderProgressBar('.column.left', 'Web Development', 40);
