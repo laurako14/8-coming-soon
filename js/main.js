@@ -18,9 +18,18 @@
 import { renderSocials } from "./components/socials/renderSocials.js";
 import { socialsData } from "./data/socialsData.js";
 import { renderClock } from "./components/clock/renderClock.js";
+import { renderProgressBar } from "./components/progress-bar/renderProgressBar.js";
+import { progressBarData } from "./data/progressBarData.js";
+import { renderAllProgressBars } from "./components/progress-bar/renderAllProgressBars.js";
 
 renderSocials('footer > .row', socialsData);
 renderClock('.clock');
+renderAllProgressBars(progressBarData);
+
+// renderProgressBar('.column.left', 'UX Design', 90);
+// renderProgressBar('.column.left', 'Web Design', 80);
+// renderProgressBar('.column.left', 'Web Development', 40);
+
 
 // if (!renderSocials()) {
 //     console.error();
