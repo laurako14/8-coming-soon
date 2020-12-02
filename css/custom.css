@@ -58,14 +58,14 @@ footer.container {
     margin-right: 5%;
 }
 
-    .hero .form > input {
+    .hero .form > input:not(.btn) {
         width: 100%;
         color: white;
         background-color: transparent;
         border-bottom-color: white;
     }
 
-    .hero .form > input::placeholder {
+    .hero .form > input:not(.btn)::placeholder {
         color: white;
     }
 

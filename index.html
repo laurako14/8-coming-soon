@@ -28,8 +28,9 @@
         <p>An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
         <div class="clock"></div>
         <form class="form">
-                <input type="text" placeholder="Type your email" required>
-                <div class="btn">Subscribe Now</div>
+                <input type="email" placeholder="Type your email" required data-validation="Email">
+                <input type="submit" class="btn" value="Subscribe Now!">
+                <!-- <div class="btn">Subscribe Now</div> -->
         </form>
         <div class="mouse">
             <div class="wheel"></div>
@@ -55,11 +56,11 @@
                     You can use the contact form below or contact us via e-mail at: <a href="mailto:trendythemenet@gmail.com">trendythemenet@gmail.com</a> Contact form is fully working and very easy to customize.
                 </p>
                 <form class="form">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email" required>
-                    <textarea maxlength=1000 placeholder="Message" required></textarea>
-                    <!-- <input type="submit" value="Send message" -->
-                    <div class="btn">Send Message</div>
+                    <input type="text" placeholder="Name" data-validation="Name">
+                    <input type="email" placeholder="Email" required data-validation="Email">
+                    <textarea maxlength=1000 placeholder="Message" required data-validation="text"></textarea>
+                    <input type="submit" value="Send message" class="btn">
+                    <!-- <div class="btn">Send Message</div> -->
                 </form>
             </div>
         </div>

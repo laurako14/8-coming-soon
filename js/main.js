@@ -21,6 +21,7 @@ import { renderClock } from "./components/clock/renderClock.js";
 import { renderProgressBar } from "./components/progress-bar/renderProgressBar.js";
 import { progressBarData } from "./data/progressBarData.js";
 import { renderAllProgressBars } from "./components/progress-bar/renderAllProgressBars.js";
+import { formValidator } from "./components/form-validator/formValidator.js";
 
 renderSocials('footer > .row', socialsData);
 renderClock('.clock');
@@ -38,3 +39,6 @@ renderAllProgressBars(progressBarData);
 // const h1DOM = document.querySelector('h1');
 // const inputDOM = document.querySelectorAll('main .form > input');
 // h1DOM.innerText = '';
+
+formValidator('.hero .form');
+formValidator('main .form');
