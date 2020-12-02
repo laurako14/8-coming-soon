@@ -34,7 +34,6 @@
     display: inline-block;
     width: 80%;
     height: 100%;
-    background-color: var(--main-color);
 }
 .progress-bar > .bottom > .bar > .loader {
     display: inline-block;
