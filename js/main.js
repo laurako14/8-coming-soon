@@ -21,6 +21,7 @@ import { renderClock } from "./components/clock/renderClock.js";
 import { progressBarData } from "./data/progressBarData.js";
 import { renderAllProgressBars } from "./components/progress-bar/renderAllProgressBars.js";
 import { formValidator } from "./components/form-validator/formValidator.js";
+import { Toast } from "./components/toast/Toast.js";
 
 renderSocials('footer > .row', socialsData);
 renderClock('.clock');
@@ -38,6 +39,12 @@ renderAllProgressBars(progressBarData);
 // const h1DOM = document.querySelector('h1');
 // const inputDOM = document.querySelectorAll('main .form > input');
 // h1DOM.innerText = '';
+
+const toast = new Toast();
+toast.render();
+// toast.show('error', 'Cia yra klaida!!!');
+toast.show('success', 'Buvo gera diena!!!')
+// toast.hide();
 
 formValidator('.hero .form');
 formValidator('main .form');
